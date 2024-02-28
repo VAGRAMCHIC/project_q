@@ -27,5 +27,5 @@ cp ${KEY_DIR}/${1}/${1}.crt ${OUTPUT_DIR}/
 cp ${KEY_DIR}/${1}/${1}.key ${OUTPUT_DIR}/
 cp ${KEY_DIR}/ta.key ${OUTPUT_DIR}/
 
-cd ${OUTPUT_DIR} &&
-tar czf ${1}.tar.gz .
+cd ${OUTPUT_DIR} && \
+    tar czf ${1}.tar.gz .

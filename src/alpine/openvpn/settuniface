@@ -1,0 +1,14 @@
+#!/sbin/openrc-run
+
+#command="/etc/openvpn/make_tun.sh"
+description="make tap iface and run openvpn tunnel"
+pidfile="/var/run/settunservice.pid"
+#comand_user="root:root"
+
+depend(){
+        need networking logger
+}
+
+start(){
+bin/sh /etc/openvpn/make_tun.sh
+}
